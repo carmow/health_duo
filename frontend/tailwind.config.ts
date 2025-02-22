@@ -1,18 +1,11 @@
-import type { Config } from "tailwindcss/types/config";
+import { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './frontend/src/**/*.{js,ts,jsx,tsx}', // Adjust the path according to your project structure
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
